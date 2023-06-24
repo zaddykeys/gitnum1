@@ -1,0 +1,226 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    background-color: black;
+    height: 460px;
+    width: 100%;
+}
+.header{
+    color: white;
+    display: inline-block;
+    margin-left: 3%;
+}
+.h1{
+    text-shadow: -20px  12px 3px gray;
+}
+.links{
+    float: right;
+    right: 0%;
+    margin-right: 3%;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+a:hover{
+    border-bottom: 2px solid red;
+}
+.home {
+    border-bottom: 2px solid red;
+}
+.ptext{
+    border: 2px solid red;
+    padding: 20px;
+    width:310px;
+    text-align: center;
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+.ptext:hover{
+    animation-play-state: paused;
+}
+@keyframes blinker {
+    25%{border: 2px solid red;}
+    50%{border: 2px solid yellow;}
+    75%{border: 2px solid green;}
+    100%{border: 2px solid blue;}
+}
+.sub-img{
+    width:50%;
+    height:420px;
+    float: right;
+}
+.sub-head{
+    color: white;
+    padding-top:130px;
+    padding-left:130px;
+    font-family:serif;
+    font-size: 30px;
+    font-weight: bolder;
+    width:650px;
+   height: 420px;
+}
+.container2{
+    display: inline-block;
+   width: 94%;
+   height: 540px;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 20px;
+}
+.h2{
+font-size: 40px;
+font-weight: bolder;
+border-bottom: 2px solid red;
+width: 50px;
+margin-bottom: 20px;
+  
+}
+.sub-img2{
+   width:45%;
+   height:450px;
+}
+.sub-text{
+    margin-top: 200px;
+    float: right;
+    margin-right: 70px;
+    text-align: center;
+   width: 600px;
+   height: auto;
+}
+.container3{
+    display: inline-block;
+   width: 94%;
+   height: 520px;
+    margin-left: 3%;
+    margin-right: 3%;
+}.sub-text2{
+    margin-top: 200px;
+    margin-right: 50px;
+    margin-left: 20px;
+    text-align: center;
+   width: 600px;
+   height: auto;
+}
+.sub-img3{
+   width:45%;
+   height:100%;
+   float: right;
+}
+.container4{
+    display: inline-block;
+   width: 100%;
+   height: 440px;
+    margin-top: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: black;
+    color: white;
+}
+.sub-text3{
+    margin-top: 90px;
+    float: right;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-align: center;
+   width: 600px;
+   height: auto;
+}
+.sub-img4{
+    width:45%;
+    height:350px;
+ }
+footer{
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.521);
+    padding: 10px;
+}
+.login-modal{
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+}
+@media screen and (max-width:780px){
+    .links{
+        font-size: 10px;
+        margin-top: 2px;
+    }
+    .sub-head{
+        font-size: 10px;
+        padding-top:90px;
+        padding-left:30px;
+        font-family:serif;
+        font-weight: bolder;
+        width: 50%;
+        height: 250px;
+        margin-top: 10px;
+    }
+    .container{
+        height: 300px;
+    }
+    .sub-img{
+        height:250px;
+    }
+    .ptext{
+        border: 2px solid red;
+        padding: 20px;
+       width:120px;
+    }
+    .h2{
+        font-size: 20px;
+        width: 30px;
+    }
+    .sub-text{
+        margin-top: 3px;
+        margin-right: 3px;
+        text-align: center;
+       width: 100%;
+       margin-bottom: 5px;
+    }
+    .sub-img2{
+        width:100%;
+        height:240px;
+     }
+     .sub-img3{
+        width:100%;
+        height:250px;
+        margin-bottom: 10px;
+     }
+     .sub-text2{
+        margin-top: 250px;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-align: center;
+       width: 100%;
+       height: 250px;
+    }
+    .container4{
+        height: 320px;
+        width: 100%;
+        margin-top: 3px;
+    }
+    .sub-img4{
+        height:200px;
+        width:38%;
+        margin-bottom: 10px;
+     }
+     .sub-text3{
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 4%;
+        margin-bottom: 20px;
+       height: 250px;
+       width: 58%;
+    }
+}
